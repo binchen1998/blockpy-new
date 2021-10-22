@@ -181,7 +181,7 @@ export function makeInterface(main) {
     </div>
 
     <!-- Row 5: Footer Row -->    
-    <div class="row">
+    <div class="row" style="display:none;">
         ${FOOTER_HTML}
     </div>
     
