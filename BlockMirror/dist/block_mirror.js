@@ -2612,46 +2612,46 @@ function makeTurtleBlock(name, returns, values, message, aliases) {
   }
 }
 
-makeTurtleBlock("forward", false, ["amount"], "move turtle forward by", ["fd"]);
-makeTurtleBlock("backward", false, ["amount"], "move turtle backward by", ["bd"]);
-makeTurtleBlock("right", false, ["angle"], "turn turtle right by", ["rt"]);
-makeTurtleBlock("left", false, ["angle"], "turn turtle left by", ["lt"]);
-makeTurtleBlock("goto", false, ["x", "y"], "move turtle to position", ["setpos", "setposition"]);
-makeTurtleBlock("setx", false, ["x"], "set turtle's x position to ", []);
-makeTurtleBlock("sety", false, ["y"], "set turtle's y position to ", []);
-makeTurtleBlock("setheading", false, ["angle"], "set turtle's heading to ", ["seth"]);
-makeTurtleBlock("home", false, [], "move turtle to origin ", []);
-makeTurtleBlock("circle", false, ["radius"], "move the turtle in a circle ", []);
-makeTurtleBlock("dot", false, ["size", "color"], "turtle draws a dot ", []);
-makeTurtleBlock("stamp", true, [], "stamp a copy of the turtle shape ", []);
-makeTurtleBlock("clearstamp", false, ["stampid"], "delete stamp with id ", []);
-makeTurtleBlock("clearstamps", false, [], "delete all stamps ", []);
-makeTurtleBlock("undo", false, [], "undo last turtle action ", []);
-makeTurtleBlock("speed", true, ["x"], "set or get turtle speed", []);
-makeTurtleBlock("position", true, [], "get turtle's position ", ["pos"]);
-makeTurtleBlock("towards", true, ["x", "y"], "get the angle from the turtle to the point ", []);
-makeTurtleBlock("xcor", true, [], "get turtle's x position ", []);
-makeTurtleBlock("ycor", true, [], "get turtle's y position ", []);
-makeTurtleBlock("heading", true, [], "get turtle's heading ", []);
-makeTurtleBlock("distance", true, ["x", "y"], "get the distance from turtle's position to ", []);
-makeTurtleBlock("degrees", false, [], "set turtle mode to degrees", []);
-makeTurtleBlock("radians", false, [], "set turtle mode to radians", []);
-makeTurtleBlock("pendown", false, [], "pull turtle pen down ", ["pd", "down"]);
-makeTurtleBlock("penup", false, [], "pull turtle pen up ", ["pu", "up"]); // Skipped some
+makeTurtleBlock("forward", false, ["amount"], "向前移动海龟", ["fd"]);
+makeTurtleBlock("backward", false, ["amount"], "向后移动海", ["bd"]);
+makeTurtleBlock("right", false, ["angle"], "海龟向右转", ["rt"]);
+makeTurtleBlock("left", false, ["angle"], "海龟向左转", ["lt"]);
+makeTurtleBlock("goto", false, ["x", "y"], "移动海龟到", ["setpos", "setposition"]);
+makeTurtleBlock("setx", false, ["x"], "设置海龟的x坐标 ", []);
+makeTurtleBlock("sety", false, ["y"], "设置海龟的x坐标 ", []);
+makeTurtleBlock("setheading", false, ["angle"], "设置海龟朝向 ", ["seth"]);
+makeTurtleBlock("home", false, [], "移动海龟到起点 ", []);
+makeTurtleBlock("circle", false, ["radius"], "按圆圈移动海龟 ", []);
+makeTurtleBlock("dot", false, ["size", "color"], "海龟画一个点 ", []);
+makeTurtleBlock("stamp", true, [], "海龟形状印章 ", []);
+makeTurtleBlock("clearstamp", false, ["stampid"], "删除印章 ", []);
+makeTurtleBlock("clearstamps", false, [], "删除所有的印章 ", []);
+makeTurtleBlock("undo", false, [], "回退上次动作 ", []);
+makeTurtleBlock("speed", true, ["x"], "设置或得到海龟速度", []);
+makeTurtleBlock("position", true, [], "得到海龟位置 ", ["pos"]);
+makeTurtleBlock("towards", true, ["x", "y"], "得到海龟相对点的角度 ", []);
+makeTurtleBlock("xcor", true, [], "得到海龟的x坐标 ", []);
+makeTurtleBlock("ycor", true, [], "得到海龟的y坐标 ", []);
+makeTurtleBlock("heading", true, [], "得到海龟的方向 ", []);
+makeTurtleBlock("distance", true, ["x", "y"], "得到到海龟的距离 ", []);
+makeTurtleBlock("degrees", false, [], "设置作图模式为角度 ", []);
+makeTurtleBlock("radians", false, [], "设置作图模式为弧度 ", []);
+makeTurtleBlock("pendown", false, [], "放下海龟作图画笔 ", ["pd", "down"]);
+makeTurtleBlock("penup", false, [], "抬起海龟作图画笔 ", ["pu", "up"]); // Skipped some
 
-makeTurtleBlock("pensize", false, [], "set or get the pen size ", ["width"]); // Skipped some
+makeTurtleBlock("pensize", false, [], "设置或得笔大小 ", ["width"]); // Skipped some
 
-makeTurtleBlock("pencolor", false, [], "set or get the pen color ", []);
-makeTurtleBlock("fillcolor", false, [], "set or get the fill color ", []);
-makeTurtleBlock("reset", false, [], "reset drawing", []);
-makeTurtleBlock("clear", false, [], "clear drawing", []);
-makeTurtleBlock("write", false, ["message"], "write text ", []); // Skipped some
+makeTurtleBlock("pencolor", false, [], "设置或得到笔颜色 ", []);
+makeTurtleBlock("fillcolor", false, [], "设置或得填充颜色 ", []);
+makeTurtleBlock("reset", false, [], "重置绘画", []);
+makeTurtleBlock("clear", false, [], "清除绘画", []);
+makeTurtleBlock("write", false, ["message"], "写下文字 ", []); // Skipped some
 
-makeTurtleBlock("bgpic", false, ["url"], "set background to ", []);
-makeTurtleBlock("done", false, [], "start the turtle loop ", ["mainloop"]);
-makeTurtleBlock("setup", false, ["width", "height"], "set drawing area size ", []);
-makeTurtleBlock("title", false, ["message"], "set title of drawing area ", []);
-makeTurtleBlock("bye", false, [], "say goodbye to turtles ", []);
+makeTurtleBlock("bgpic", false, ["url"], "设置背景图片 ", []);
+makeTurtleBlock("done", false, [], "开始海龟作图循环 ", ["mainloop"]);
+makeTurtleBlock("setup", false, ["width", "height"], "设置作图区域大小 ", []);
+makeTurtleBlock("title", false, ["message"], "设置作图区域标题 ", []);
+makeTurtleBlock("bye", false, [], "向海龟作图说再见 ", []);
 BlockMirrorTextToBlocks.prototype.MODULE_FUNCTION_SIGNATURES['matplotlib.pyplot'] = BlockMirrorTextToBlocks.prototype.MODULE_FUNCTION_SIGNATURES['plt'];
 
 BlockMirrorTextToBlocks.getFunctionBlock = function (name, values, module) {
